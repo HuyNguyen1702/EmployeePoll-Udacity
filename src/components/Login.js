@@ -5,8 +5,7 @@ const Login = ({ users, dispatch }) => {
   const [selectedUser, setSelectedUser] = useState({});
 
   const handleDropdown = (e) => {
-    let obj = JSON.parse(e.target.value);
-    setSelectedUser(obj);
+    setSelectedUser(e.target.value);
   };
 
   const handleLogin = (e) => {
@@ -24,7 +23,7 @@ const Login = ({ users, dispatch }) => {
         <select value={selectedUser} onChange={handleDropdown}>
           {users.map((user, index) => {
             return (
-              <option key={index} value={JSON.stringify(user)}>
+              <option key={index} value={user.id}>
                 {user.name}
               </option>
             );

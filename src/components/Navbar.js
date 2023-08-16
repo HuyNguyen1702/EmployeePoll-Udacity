@@ -14,7 +14,7 @@ const Navbar = ({ authedUser, dispatch }) => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/dashboard">Leaderboard</Link>
+            <Link to="/leaderboard">Leaderboard</Link>
           </li>
           <li>
             <Link to="/new">New</Link>
@@ -24,7 +24,7 @@ const Navbar = ({ authedUser, dispatch }) => {
 
       <nav className="nav">
         <ul>
-          <li>{authedUser.name}</li>
+          <li>{authedUser}</li>
           <li onClick={handleLogout}>Log out</li>
         </ul>
       </nav>
