@@ -1,7 +1,6 @@
 import { connect } from "react-redux";
 import { formatDate } from "../utils/_DATA";
-const UserCard = (props) => {
-  console.log(props);
+const Card = (props) => {
   return (
     <div className="card">
       <h3 className="center">{props.question.author}</h3>
@@ -12,11 +11,10 @@ const UserCard = (props) => {
   );
 };
 
-const mapStateToProps = ({ users }, props) => {
-  // const user = users[props.userId];
+const mapStateToProps = ({ users }) => {
   return {
     users,
   };
 };
 
-export default connect(mapStateToProps)(UserCard);
+export default connect(mapStateToProps)(Card);

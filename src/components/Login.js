@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { setAuthUser } from "../actions/authedUser";
 import { useState } from "react";
 const Login = ({ users, dispatch }) => {
-  const [selectedUser, setSelectedUser] = useState({});
+  const [selectedUser, setSelectedUser] = useState("");
 
   const handleDropdown = (e) => {
     setSelectedUser(e.target.value);

@@ -6,6 +6,7 @@ import Login from "./Login";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Leaderboard from "./LeaderBoard";
+import NewPoll from "./NewPoll";
 const App = (props) => {
   useEffect(() => {
     props.dispatch(handleInitialData());
@@ -22,6 +23,7 @@ const App = (props) => {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
+              <Route path="/new" element={<NewPoll />} />
             </Routes>
           </div>
         )}

@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import UserCard from "./UserCard";
+import UserCard from "./Card";
 const Home = (props) => {
   console.log(props);
   return (

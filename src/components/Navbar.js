@@ -7,14 +7,14 @@ const Navbar = ({ authedUser, dispatch }) => {
   };
 
   return (
-    <div className="nav-container">
+    <div className="container nav-container">
       <nav className="nav">
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/leaderboard">Leaderboard</Link>
+            <Link to="/leaderboard">LeaderBoard</Link>
           </li>
           <li>
             <Link to="/new">New</Link>
